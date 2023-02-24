@@ -5,11 +5,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const pathCore = require('path');
-// const errorRoute = require('./routes/ops.js');
 
-const signup = require('./routes/signup')
-const login = require('./routes/login')
-const indexroute = require('./routes/index')
+
+const signup = require('./routes/signup');
+const login = require('./routes/login');
+const indexroute = require('./routes/index');
+const finderRoute = require('./routes/finder');
+
+const port = 500;
 //  ************************************ importing ************************************
 
 // use pug engine for templetes
@@ -23,5 +26,8 @@ app.use(express.static(pathCore.join(__dirname, 'public')));
 app.use(indexroute);
 app.use(signup);
 app.use(login);
+app.use(finderRoute);
 // app.use(errorRoute);
-app.listen(500);
+
+app.listen(port);
+console.log("server started at port " + port);

@@ -7,10 +7,12 @@ head
 nav
   .nav-left
     a(href='#')
-      img(src='icon.png')
+      img(src='icon.png' alt="logo here")
   ul.nav-right
-    button.button-green(onclick="lclick()") Log In
-    button.button-blue(onclick="Sclick()") Sign Up
+    form(action='/login' method='GET')
+      button.button-green Log In
+    form(action='/signup' method='GET')
+      button.button-blue Sign Up
 .container
   .column1
     h1 Be
@@ -20,8 +22,8 @@ nav
     br
     br
     br
-    form(action='/login' method='GET')
-      button.button-blue login
+    form(action='/giver' method='GET')
+      button.button-blue Find influencers
   .column2
     h1 FIND
     h1 A
@@ -30,6 +32,6 @@ nav
     br
     br
     br
-    form(action='/signup' method='GET')
-      button.button-green signup
+    form(action='/finder' method='GET')
+      button.button-green Find Sponsors
 

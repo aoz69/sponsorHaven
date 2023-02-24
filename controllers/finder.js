@@ -1,3 +1,3 @@
-exports.finder = (req,res,next) => {
-    res.render('finder');
+exports.finderGiver = (req,res,next) => {
+    res.render('finderGiver');
 }
