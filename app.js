@@ -5,15 +5,21 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const pathCore = require('path');
-
-
 const signup = require('./routes/signup');
 const login = require('./routes/login');
 const indexroute = require('./routes/index');
 const finderRoute = require('./routes/finder');
+const mongoose = require('mongoose');
+
 
 const port = 500;
 //  ************************************ importing ************************************
+
+
+mongoose.connect(
+"mongodb+srv://panas:252536@cluster0.zrgghcb.mongodb.net/test",{useNewUrlParser: true})
+.then(() => console.log("Connected to MongoDB"))
+.catch((err) => console.error("Could not connect to MongoDB", err));
 
 // use pug engine for templetes
 app.set('view engine' , 'pug');
