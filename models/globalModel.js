@@ -17,20 +17,76 @@ const userModel = new mongoose.Schema( {
 module.exports = mongoose.model('User', userModel);
 
 
-// const bookModel = new BaseModel('books', {
-//   title: String,
-//   author: String,
-//   price: Number
-// });
+// const MyModel = require('../models/MyModel');
 
-// //⁡⁣⁣⁢ 𝙋𝙪𝙩 𝙩𝙝𝙞𝙨 𝙞𝙨 𝙖𝙖𝙧𝙠𝙤 𝙘𝙤𝙣𝙩𝙧𝙤𝙡𝙡𝙚𝙧 𝙬𝙖𝙡𝙖 𝙛𝙞𝙡𝙚, 𝙢𝙖𝙩𝙝𝙞 𝙠𝙤 ⁡⁣⁣⁢𝙠𝙤 𝙛𝙞𝙡𝙚 𝙟𝙖𝙨𝙩𝙤 𝙖𝙡𝙡 𝙢𝙤𝙙𝙚𝙡𝙨 𝙠𝙤 𝙡𝙖𝙜𝙞 𝟭 𝙛𝙞𝙡𝙚 ⁡
-// exports.addUsers = async (req, res, next) => {
-//   const persons = await userModel.findAll();
-//   res.render('personList', { persons });
+// const myModel = new MyModel();
+
+// const getAll = async (req, res) => {
+//   try {
+//     const data = await myModel.findAll();
+//     res.status(200).json(data);
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
 // };
 
-// exports.getBooks = async (req, res, next) => {
-//   const books = await bookModel.findAll();
-//   res.render('bookList', { books });
+// const getById = async (req, res) => {
+//   const id = req.params.id;
+//   try {
+//     const data = await myModel.findById(id);
+//     if (!data) {
+//       res.status(404).json({ message: 'Data not found' });
+//     } else {
+//       res.status(200).json(data);
+//     }
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// };
+
+// const create = async (req, res) => {
+//   try {
+//     const data = await myModel.create(req.body);
+//     res.status(201).json(data);
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// };
+
+// const updateById = async (req, res) => {
+//   const id = req.params.id;
+//   try {
+//     const data = await myModel.update(id, req.body);
+//     if (!data) {
+//       res.status(404).json({ message: 'Data not found' });
+//     } else {
+//       res.status(200).json(data);
+//     }
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// };
+
+// const deleteById = async (req, res) => {
+//   const id = req.params.id;
+//   try {
+//     const data = await myModel.delete(id);
+//     if (!data) {
+//       res.status(404).json({ message: 'Data not found' });
+//     } else {
+//       res.status(200).json({ message: 'Data deleted successfully' });
+//     }
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// };
+
+// // Export the controller functions so they can be used in other files
+// module.exports = {
+//   getAll,
+//   getById,
+//   create,
+//   updateById,
+//   deleteById,
 // };
 
