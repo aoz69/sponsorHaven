@@ -1,82 +1,107 @@
 
 @font-face {
-    font-family: 'ocr';
-    src: url('fonts/ocraext-webfont.woff2') format('woff2'),
-         url('../fonts/ocraext-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'ocr';
+	src: url('fonts/ocraext-webfont.woff2') format('woff2'),
+			url('../fonts/ocraext-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'bantayog';
-    src: url('./fonts/bantayog-regular-webfont.woff2') format('woff2'),
-         url('./fonts/bantayog-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'bantayog';
+	src: url('./fonts/bantayog-regular-webfont.woff2') format('woff2'),
+			url('./fonts/bantayog-regular-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: bold;
 }
 
 body {
 	font-family: 'bantayog';
 	margin: 0;
 	padding: 0;
-  }
-  
-  nav {
+}
+
+nav {
 	background-color: #ffff;
 	color: #1b2a38;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
-  }
-  
-  .nav-left {
+}
+
+.nav-left {
 	font-weight: bold;
 	font-size: 24px;
-  }
-  
-  .nav-right a {
+}
+
+.nav-right a {
 	color: #1b2a38;
 	margin-left: 20px;
 	text-decoration: none;
-  }
-  
-  .content-wrapper {
+}
+
+.content-wrapper {
 	height: 89.7vh;
 	display: flex;
-  }
-  
-  .left-content {
+}
+
+.left-content {
 	font-family: 'ocr';
 	width: 70%;
 	justify-content: center;
 	background-color: #1b2a38;
 	color: #e8eaeb;
 	display: flex;
+	line-height: 20px;
 	align-items: center;
-  }
-  
-  .right-content {
+}
+
+.right-content {
 	width: 30%;
-	justify-content: center;
 	background-color: #e8eaeb;
 	color: #1b2a38;
 	display: flex;
 	align-items: center;
-  }
-  
-  .content {
+	line-height: 20px;
+}
+
+.content {
 	padding: 20px;
 	text-align: center;
-  }
-  
-  h2 {
+}
+
+h2 {
 	margin-top: 0;
-  }
-  
-  footer {
+}
+
+footer {
 	background-color: #ffff;
 	color: #1b2a38;
 	text-align: center;
 	padding: 10px;
-  }
-  
+}
+
+#logoH{
+	margin-top: 20%;
+	font-size: 250px;
+}
+
+#tagline{
+	margin-top: -10%;
+}
+
+.greenF{
+	font-size: 75px;
+	color: #39ad40;
+	text-align: left;
+}
+
+h3{
+	font-size: 65px;
+	text-align: left;
+}
+
+
+.r, .l{
+	display: inline;
+}
