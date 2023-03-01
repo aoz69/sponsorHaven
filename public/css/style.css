@@ -1,18 +1,18 @@
 
 @font-face {
 	font-family: 'ocr';
-	src: url('fonts/ocraext-webfont.woff2') format('woff2'),
-			url('../fonts/ocraext-webfont.woff') format('woff');
+	src:url('fonts/ocraext-webfont.woff2') format('woff2'),
+		url('../fonts/ocraext-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'bantayog';
-	src: url('./fonts/bantayog-regular-webfont.woff2') format('woff2'),
-			url('./fonts/bantayog-regular-webfont.woff') format('woff');
+	src:url('./fonts/bantayog-regular-webfont.woff2') format('woff2'),
+		url('./fonts/bantayog-regular-webfont.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
-	font-weight: bold;
 }
 
 body {
@@ -26,17 +26,17 @@ nav {
 	color: #1b2a38;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 15px;
 }
 
 .nav-left {
-	font-weight: bold;
+	font-family: 'ocr';
 	font-size: 24px;
 }
 
 .nav-right a {
 	color: #1b2a38;
-	margin-left: 20px;
+	margin-left: 15px;
 	text-decoration: none;
 }
 
@@ -105,3 +105,23 @@ h3{
 .r, .l{
 	display: inline;
 }
+
+.join-button {
+	display: inline-block;
+	background-color: #39ad40;
+	border: none;
+	color: #ffffff;
+	padding: 12px 24px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+  }
+  
+  .join-button:hover {
+	color: #1b2a38;
+  }
+  

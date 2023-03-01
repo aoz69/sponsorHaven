@@ -6,15 +6,15 @@ nav
   .nav-left
     | YATRA
   .nav-right
-    a(href='#') Home
-    a(href='#') About Us
-    a(href='#') Services
-    a(href='#') Contact Us
+    a(href='/#') Home
+    a(href='/signupForm') About Us
+    a(href='/signupForm') Services
+    a(href='/signupForm') Contact Us
 .content-wrapper
   .left-content
     .content
       h2#logoH YATRA
-      p#tagline This is where tagLine goes
+      p#tagline Making it easier for you to find the right brand to work with/for
   .right-content
     .content
       h2.greenF FIND,
@@ -22,6 +22,6 @@ nav
       h2.greenF.l WORK 
       h3.clear.r WITH
       h3.clear ANY BRANDS
-      button JOIN NOW
+      button.join-button(onclick="location.href='/signupForm'") Join Us
 footer
   | &copy; 2023 YATRA. All rights reserved.
