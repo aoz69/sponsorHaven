@@ -67,7 +67,7 @@ nav {
 
 .content {
 	padding: 20px;
-	text-align: center;
+	/* text-align: center; */
 }
 
 h2 {
@@ -83,7 +83,7 @@ footer {
 
 #logoH{
 	margin-top: 20%;
-	font-size: 250px;
+	font-size: 1500%;
 }
 
 #tagline{
@@ -91,13 +91,13 @@ footer {
 }
 
 .greenF{
-	font-size: 75px;
+	font-size: 500%;
 	color: #39ad40;
 	text-align: left;
 }
 
 h3{
-	font-size: 65px;
+	font-size: 400%;
 	text-align: left;
 }
 
@@ -123,5 +123,9 @@ h3{
   
   .join-button:hover {
 	color: #1b2a38;
+  }
+
+  @media only screen and (min-width: 800px) {
+
   }
   
