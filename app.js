@@ -9,17 +9,12 @@ const signup = require('./routes/signup');
 const login = require('./routes/login');
 const indexroute = require('./routes/index');
 const finderRoute = require('./routes/finder');
-const mongoose = require('mongoose');
+// const dbcon = require('./controllers/dbcon');
 
 const port = 500;
 //  ************************************ importing ************************************
 
-
-mongoose.connect(
-"mongodb+srv://panas:252536@cluster0.zrgghcb.mongodb.net/test",{useNewUrlParser: true})
-.then(() => console.log("Connected to MongoDB"))
-.catch((err) => console.error("Could not connect to MongoDB", err));
-
+// app.use(dbcon);
 // use pug engine for templetes
 app.set('view engine' , 'pug');
 //tells where templetes are

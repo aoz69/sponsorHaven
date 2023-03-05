@@ -26,3 +26,14 @@ exports.addUsers = (req,res) =>{
 
     });
 }
+
+// }
+// exports.addProduct = (req,res) =>{
+//     const product = new schema({
+//         name: 'Roster',
+//         price: 69,
+//         avilable: 'NO'
+// });
+// product.save((product));
+
+// }
