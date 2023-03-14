@@ -27,13 +27,9 @@ exports.addUsers = (req,res) =>{
     });
 }
 
-// }
-// exports.addProduct = (req,res) =>{
-//     const product = new schema({
-//         name: 'Roster',
-//         price: 69,
-//         avilable: 'NO'
-// });
-// product.save((product));
-
-// }
+//to get data from database
+exports.getName = async (req,res) =>{
+    const ff = await schema.find({});
+    console.log(ff);
+    res.json(ff);
+}
