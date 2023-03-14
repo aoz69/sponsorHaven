@@ -29,7 +29,7 @@ exports.addUsers = (req,res) =>{
 
 //to get data from database
 exports.getName = async (req,res) =>{
-    const ff = await schema.find({});
-    console.log(ff);
-    res.json(ff);
+    const ff = await schema.find({}).populate();
+    console.log(ff[0].Lname);
+    res.json({"name":ff[0].Lname});
 }

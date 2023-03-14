@@ -26,9 +26,10 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(pathCore.join(__dirname, 'public')));
 app.use(indexroute);
 app.use(signup);
-app.use(nn);
 app.use(login);
 app.use(finderRoute);
+app.use(nn);
+
 // app.use(errorRoute);
 
 app.listen(port);
